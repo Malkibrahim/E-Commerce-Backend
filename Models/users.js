@@ -1,6 +1,9 @@
 var mongoose = require("mongoose");
-
 require("dotenv").config();
+mongoose.connect(process.env.CONNECT_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 const bcrypt = require("bcrypt");
 const JWT = require("jsonwebtoken");
 const util = require("util");
