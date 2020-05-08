@@ -4,7 +4,7 @@ const userRouter = require("./Routes/user");
 const productRouter = require("./Routes/products");
 const catgories = require("./Routes/category");
 var cors = require("cors");
-
+require("./db");
 require("express-async-errors");
 const port = process.env.port || 3000;
 var bodyParser = require("body-parser");
