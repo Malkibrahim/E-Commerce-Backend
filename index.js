@@ -6,7 +6,7 @@ const catgories = require("./Routes/category");
 var cors = require("cors");
 
 require("express-async-errors");
-const port = 3000;
+const port = process.env.port || 3000;
 var bodyParser = require("body-parser");
 
 var allowCrossDomain = function (req, res, next) {
