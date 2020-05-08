@@ -1,8 +1,5 @@
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/user", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+
 require("dotenv").config();
 const bcrypt = require("bcrypt");
 const JWT = require("jsonwebtoken");
